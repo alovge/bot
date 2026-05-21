@@ -35,8 +35,12 @@ from sqlalchemy import (
 BOT_TOKEN = 8647073525:AAH5H9-7-iVpxqVtvssR0bmW7Gj1Tq0ZGyg
 
 GROUP_CITY = {
-    -1001111111111: "Москва",
-    -1002222222222: "Рига"
+    -1001111111111: "Санкт-Петербург",
+    -1002222222222: "Барнаул",
+    -1002222222222: "Кемерово",
+    -1002222222222: "Самара",
+    -1002222222222: "Томск",
+    -1002222222222: "Омск"
 }
 
 ADMIN_IDS = [123456789]
@@ -118,8 +122,8 @@ class AddCityState(StatesGroup):
 def parse_message(text):
 
     patterns = {
-        "received": r"(.+) получил велосипед",
-        "returned": r"(.+) сдал велосипед",
+        "received": r"(.+) Vin:",
+        "returned": r"(.+) Сдал электро",
         "delete": r"Удалить (.+)",
         "service": r"(.+) прошел ТО"
     }

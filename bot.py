@@ -425,7 +425,7 @@ async def check_user(callback: CallbackQuery):
 # =========================
 
 @dp.message(F.chat.type.in_(["group", "supergroup"]))
-async def group_parser(message: Message):
+async def group_parser(message: Message): print(message.chat.id)
 
     if message.chat.id not in GROUP_CITY:
         return

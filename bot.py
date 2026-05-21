@@ -32,7 +32,7 @@ from sqlalchemy import (
 # CONFIG
 # =========================
 
-BOT_TOKEN = AAH5H9-7-iVpxqVtvssR0bmW7Gj1Tq0ZGyg
+BOT_TOKEN = "8647073525:AAH5H9-7-iVpxqVtvssR0bmW7Gj1Tq0ZGyg"
 
 GROUP_CITY = {
     -1001111111111: "Санкт-Петербург",
